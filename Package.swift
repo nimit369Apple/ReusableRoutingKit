@@ -9,14 +9,13 @@ let package = Package(
             "ReusableRoutingKit", "ReusableRoutingKitDependencies"
         ])
     ],
-    // BrowserKit is a dependency of the current ReusableRoutingKit source.
-    // A source target is used because binary targets cannot declare product dependencies.
-    dependencies: [
-        .package(
-                url: "https://github.com/markbattistella/BrowserKit.git",
-                from: "26.0.0"
-            )
-    ],
+   dependencies: [
+    .package(
+        url: "https://github.com/markbattistella/BrowserKit.git",
+        from: "26.0.0"
+    )
+ ],
+
     targets: [
         .binaryTarget(
             name: "ReusableRoutingKit",
