@@ -1,0 +1,15 @@
+{
+  "originHash" : "cc517976ba3b6048c88603c71c7bfab9718e31c698e423e4c77d30d14f84bf43",
+  "pins" : [
+    {
+      "identity" : "browserkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/markbattistella/BrowserKit.git",
+      "state" : {
+        "revision" : "bbfce56eea73771a74fc8c0431632de4d5e4b6f3",
+        "version" : "26.9.12"
+      }
+    }
+  ],
+  "version" : 3
+}

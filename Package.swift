@@ -12,13 +12,16 @@ let package = Package(
     // BrowserKit is a dependency of the current ReusableRoutingKit source.
     // A source target is used because binary targets cannot declare product dependencies.
     dependencies: [
-        .package(url: "https://github.com/markbattistella/BrowserKit.git", branch: "main")
+        .package(
+                url: "https://github.com/markbattistella/BrowserKit.git",
+                from: "26.0.0"
+            )
     ],
     targets: [
         .binaryTarget(
             name: "ReusableRoutingKit",
-            url: "https://github.com/nimit369Apple/ReusableRoutingKit/releases/download/1.0.0/ReusableRoutingKit-1.0.0.xcframework.zip",
-            checksum: "767d977e510cf414b4b548252a4d88ce873d065549e332a1e124d5957ab290c4"
+            url: "https://github.com/nimit369Apple/ReusableRoutingKit/releases/download/1.0.1/ReusableRoutingKit-1.0.1.xcframework.zip",
+            checksum: "55d6a33cdc3cc1a20851cda2f7628910290358f22adabffb11be623a0c8a2e79"
         ),
         .target(
             name: "ReusableRoutingKitDependencies",
